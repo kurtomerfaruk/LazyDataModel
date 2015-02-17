@@ -3,6 +3,7 @@
   <persistence-unit name="kurtomerfaruk_LazyDataModel_war_1.0PU" transaction-type="JTA">
     <jta-data-source>jdbc/sample</jta-data-source>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
-    <properties/>
+    <properties>
+    </properties>
   </persistence-unit>
 </persistence>
