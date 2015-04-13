@@ -16,7 +16,7 @@
         <p:growl id="growl" life="3000"/>
 
         <p:layout fullPage="true">
-            <p:layoutUnit position="north" size="100" header="#{myBundle.AppName}">
+            <p:layoutUnit position="west" size="180" >
                 <!-- Menu here. Also a layout and a way to log a user out -->
                 <ui:include src="/appmenu.xhtml"/>
             </p:layoutUnit>
@@ -25,7 +25,7 @@
                 <ui:insert name="footer"/>
             </p:layoutUnit>
 
-            <p:layoutUnit position="center">
+            <p:layoutUnit position="center" id="centerLayout">
                 <ui:insert name="body"/>
             </p:layoutUnit>
 

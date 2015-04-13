@@ -8,10 +8,10 @@
 
     <ui:composition>
         <h:form id="menuForm">
-            <p:menubar>
-                <p:menuitem value="#{myBundle.Home}" outcome="/index" icon="ui-icon-home"/>
+            <p:slideMenu>
+                <p:menuitem value="#{myBundle.Home}" action="/index" icon="ui-icon-home" update=":centerLayout"/>
                 <p:submenu label="#{myBundle.Maintenance}">
-                    <p:menuitem value="#{myBundle.CustomerHeading}..." outcome="/customer/index" />
+                    <p:menuitem value="#{myBundle.CustomerHeading}..." action="/customer/index" update=":centerLayout"/>
                     <p:menuitem value="#{myBundle.DiscountCodeHeading}..." outcome="/discountCode/index" />
                     <p:menuitem value="#{myBundle.ManufacturerHeading}..." outcome="/manufacturer/index" />
                     <p:menuitem value="#{myBundle.MicroMarketHeading}..." outcome="/microMarket/index" />
@@ -19,7 +19,7 @@
                     <p:menuitem value="#{myBundle.ProductCodeHeading}..." outcome="/productCode/index" />
                     <p:menuitem value="#{myBundle.PurchaseOrderHeading}..." outcome="/purchaseOrder/index" />
                 </p:submenu>
-            </p:menubar>
+            </p:slideMenu>>
         </h:form>
     </ui:composition>
 
